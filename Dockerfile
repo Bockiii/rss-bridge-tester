@@ -1,3 +1,3 @@
 from ghcr.io/rss-bridge/rss-bridge:latest
 
-COPY /bridges /config
+COPY --chown=www-data:www-data ./bridges /config
