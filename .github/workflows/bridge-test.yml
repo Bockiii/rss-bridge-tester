@@ -20,6 +20,7 @@ jobs:
           args: -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/bridges:/config
       - name: Run bridge tests
         run: |
+          curl 'localhost';
           curl -m 1200 'http://localhost/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
           jq -r '.items[].tags | @csv' rss.json > rss.csv;
           cat rss.csv >> results.csv;
