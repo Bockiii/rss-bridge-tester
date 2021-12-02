@@ -19,12 +19,13 @@ jobs:
           docker build -t bridgetester .
       - name: Start docker
         run: |
-          docker run -d bridgetester -p 3000:80
+          docker run -d -p 80 tutum/hello-world
       - name: Sleep for 10 seconds
         run: sleep 10s
         shell: bash
       - name: Run bridge tests
         run: |
+          curl localhost;
           curl -m 1200 'https://localhost:3000/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
           jq -r '.items[].tags | @csv' rss.json > rss.csv;
           cat rss.csv >> results.csv;
