@@ -18,6 +18,9 @@ jobs:
         uses: docker://rssbridge/rss-bridge:latest
         with:
           args: -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/bridges:/config -p 3000:80
+      - name: Sleep for 10 seconds
+        run: sleep 10s
+        shell: bash
       - name: Run bridge tests
         run: |
           curl 'localhost:3000';
