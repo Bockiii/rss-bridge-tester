@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v2.3.2
-      - name: Run RSS-Bridge docker
-        uses: docker://ghcr.io/rss-bridge/rss-bridge:latest
-        with:
-          args: -v "/home/runner/work/rss-bridge-tester/rss-bridge-tester/bridges":"/config"
+      - name: Build docker
+        run: |
+          docker build -t bridgetester .
+          docker run -d bridgetester
       - name: Sleep for 10 seconds
         run: sleep 10s
         shell: bash
