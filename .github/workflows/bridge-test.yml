@@ -25,7 +25,7 @@ jobs:
         shell: bash
       - name: Run bridge tests
         run: |
-          curl localhost;
+          curl http://localhost;
           curl -m 1200 'https://localhost:3000/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
           jq -r '.items[].tags | @csv' rss.json > rss.csv;
           cat rss.csv >> results.csv;
