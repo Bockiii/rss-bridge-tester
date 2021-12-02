@@ -15,7 +15,7 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2.3.2
       - name: Run RSS-Bridge docker
-        uses: docker://rssbridge/rss-bridge:latest
+        uses: docker://ghcr.io/rss-bridge/rss-bridge:latest
         with:
           args: -v "/home/runner/work/rss-bridge-tester/rss-bridge-tester/bridges":"/config"
       - name: Sleep for 10 seconds
