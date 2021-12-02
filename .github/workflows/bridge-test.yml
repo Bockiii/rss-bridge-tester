@@ -1,0 +1,31 @@
+name: 'Bridge Tests'
+
+on:
+  schedule:
+    - cron:  '0 7 * * 1,4'
+    # scheduled at 07:00 every Monday and Thursday
+
+  workflow_dispatch:  # click the button on Github repo!
+
+jobs:
+  test-bridges:
+    name: Test Bridges
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2.3.2
+      - name: Run RSS-Bridge docker
+        uses: docker://rssbridge/rss-bridge:latest
+        with:
+          args: -v /bridges:/config
+      - name: Run bridge tests
+        run: |
+          curl -m 1200 'http://localhost/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
+          jq -r '.items[].tags | @csv' rss.json > rss.csv;
+          cat rss.csv >> results.csv;
+      - name: Update deployment files
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: results.csv
+          commit-msg: New run
+          github-token: ${{ secrets.GITHUB_TOKEN }}
