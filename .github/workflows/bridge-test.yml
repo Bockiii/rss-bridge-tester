@@ -17,7 +17,7 @@ jobs:
       - name: Run RSS-Bridge docker
         uses: docker://rssbridge/rss-bridge:latest
         with:
-          args: -v /bridges:/config
+          args: -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/bridges:/config
       - name: Run bridge tests
         run: |
           curl -m 1200 'http://localhost/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
