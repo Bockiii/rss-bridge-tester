@@ -19,14 +19,14 @@ jobs:
           docker build -t bridgetester .
       - name: Start docker
         run: |
-          mkdir /temprss;
-          docker run -d -p 80 -v /temprss:/temprss bridgetester
+          mkdir /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss;
+          docker run -d -p 80 -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss:/temprss bridgetester
       - name: Run bridge tests
         run: |
           # curl http://localhost;
           # curl -m 1200 'https://localhost:3000/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
           # jq -r '.items[].tags | @csv' rss.json > rss.csv;
-          cat /temprss/rss.csv >> results.csv;
+          cat /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss/rss.csv >> results.csv;
       - name: Update deployment files
         uses: test-room-7/action-update-file@v1
         with:
