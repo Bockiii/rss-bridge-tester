@@ -21,6 +21,9 @@ jobs:
         run: |
           mkdir /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss;
           docker run -d -p 80 -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss:/temprss bridgetester
+      - name: Sleep for 60 seconds
+        run: sleep 60s
+        shell: bash
       - name: Run bridge tests
         run: |
           # curl http://localhost;
