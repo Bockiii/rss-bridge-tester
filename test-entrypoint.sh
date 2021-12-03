@@ -36,6 +36,8 @@ fi
 # Start apache
 apache2-foreground
 
+sleep 10s
+
 curl -m 1200 'https://localhost/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json
-jq -r '.items[].tags | @csv' rss.json > rss.csv
-cat rss.csv >> results.csv
+jq -r '.items[].tags | @csv' rss.json > /temprss/rss.csv
+# cat rss.csv >> results.csv
