@@ -19,7 +19,7 @@ jobs:
           docker build -t bridgetester .
       - name: Start docker
         run: |
-          mkdir ./temprss
+          mkdir temprss;
           docker run -d -p 80 -v ./temprss:/temprss bridgetester
       - name: Run bridge tests
         run: |
