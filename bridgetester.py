@@ -76,7 +76,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 bridges = soup.find_all("section")
 RESULTS = {}
 TIMEOFRUN = int(time.time())
-IGNORED = ['Tester', 'Anime', 'Blizzard', 'Demo', 'Flickr', 'Facebook', 'Portuguesa', 'Q Play', 'Filter']
+IGNORED = ['Tester', 'AnimeUltime', 'BlizzardNews', 'Demo', 'Flickr', 'Facebook', 'FB2', 'Portuguesa', 'Q Play', 'Filter']
 getParameters(bridges)
 if not os.path.isfile('stats.csv'):
     pd.DataFrame(RESULTS).T.to_csv('stats.csv')
