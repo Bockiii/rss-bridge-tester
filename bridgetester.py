@@ -46,7 +46,7 @@ def getBridge(bridgestring,bridgeref):
     page.encoding='utf-8-sig'
     runtime = time.perf_counter() - start
     # some time calculations needed to get the seconds correctly into powerbi
-    RESULTS[bridgeref]['runtime'] = int(runtime * 100)
+    RESULTS[bridgeref]['runtime'] = int(runtime * 1000)
     if page.text != '':
         jsoncontent = page.json()
         RESULTS[bridgeref]['items'] = len(jsoncontent['items'])
