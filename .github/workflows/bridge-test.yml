@@ -16,8 +16,8 @@ jobs:
         uses: actions/checkout@v2.3.2
       - name: Start docker
         run: |
-          echo "*" > whitelist.txt;
-          docker run -d -v whitelist.txt:/app/whitelist.txt -p 3000:80 ghcr.io/rss-bridge/rss-bridge:latest
+          echo "*" > /home/runner/work/rss-bridge-tester/rss-bridge-tester/whitelist.txt;
+          docker run -d -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/whitelist.txt:/app/whitelist.txt -p 3000:80 ghcr.io/rss-bridge/rss-bridge:latest
       - name: Sleep for 5 seconds
         run: sleep 5s
         shell: bash
