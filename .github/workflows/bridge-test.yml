@@ -17,7 +17,7 @@ jobs:
       - name: Start docker
         run: |
           echo "*" > whitelist.txt;
-          docker run -d -v whitelist.txt:/app/whitelist.txt -p 8000:80 ghcr.io/rss-bridge/rss-bridge:latest
+          docker run -d -v whitelist.txt:/app/whitelist.txt --network host ghcr.io/rss-bridge/rss-bridge:latest
       - name: Sleep for 5 seconds
         run: sleep 5s
         shell: bash
