@@ -14,25 +14,24 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v2.3.2
-      - name: Build docker
-        run: |
-          docker build -t bridgetester .
       - name: Start docker
         run: |
-          mkdir /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss;
-          docker run -d -p 80 -v /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss:/temprss bridgetester
-      - name: Sleep for 60 seconds
-        run: sleep 60s
+          echo "*" > whitelist.txt;
+          docker run -d -v -p 8000:80 whitelist.txt:/app/whitelist.txt ghcr.io/rss-bridge/rss-bridge:latest
+      - name: Sleep for 5 seconds
+        run: sleep 5s
         shell: bash
+      - name: Setup python
+        uses: actions/setup-python@v2
+          with:
+            python-version: '3.7'
+            cache: 'pip'
+        run: pip install -r requirements.txt
       - name: Run bridge tests
-        run: |
-          # curl http://localhost;
-          # curl -m 1200 'https://localhost:3000/?action=display&bridge=Tester&url=localhost&format=Json' -o rss.json;
-          # jq -r '.items[].tags | @csv' rss.json > rss.csv;
-          cat /home/runner/work/rss-bridge-tester/rss-bridge-tester/temprss/rss.csv >> results.csv;
+        run: python bridgetester.py
       - name: Update deployment files
         uses: test-room-7/action-update-file@v1
         with:
-          file-path: results.csv
+          file-path: stats.csv
           commit-msg: New run
           github-token: ${{ secrets.GITHUB_TOKEN }}
