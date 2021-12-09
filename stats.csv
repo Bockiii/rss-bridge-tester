@@ -10,7 +10,6 @@ AllocineFR,1639065725,350,33,working,,
 Amazon,1639065725,,,,,['q']
 AmazonPriceTracker,1639065725,133,1,working,,
 Anidex,1639065725,11,1,broken,Bridge returned error 0! (18970),
-AnimeUltime,1639065725.0,450.0,,,,
 AppleAppStore,1639065725,113,25,working,,
 AppleMusic,1639065725,80,10,working,,
 ArtStation,1639065725,,,,,['q']
@@ -216,7 +215,6 @@ Pixiv,1639065725,639,10,working,,
 PlantUMLReleases,1639065725,65,137,sizewarning,,
 PokemonTV,1639065725,118,1,broken,Bridge returned error 404! (18970),
 Pornhub,1639065725,,,,,['q']
-PresidenciaPT,1639065725.0,826.0,,,,
 QPlay,1639065725,,,,,['program']
 RTBF,1639065725,188,1,broken,Bridge returned error 404! (18970),
 RaceDepartment,1639065725,998,10,working,,
@@ -240,7 +238,6 @@ ScoopIt,1639065725,,,,,['u']
 Scribd,1639065725,2,1,broken,Bridge returned error 500! (18970),
 SensCritique,1639065725,2,0,broken,,
 SeznamZpravy,1639065725,151,1,broken,Bridge returned error 500! (18970),
-Shanaproject,1639065725.0,73.0,50.0,,,
 Shimmie2,1639065725,74,1,broken,Bridge returned error 404! (18970),
 Skimfeed,1639065725,89,216,sizewarning,,
 Soundcloud,1639065725,,,,,['u']
@@ -285,11 +282,9 @@ Vk,1639065725,,,,,['u']
 WallmineNews,1639065725,958,10,working,,
 WallpaperStop,1639065725,56,0,broken,,
 Wallpaperflare,1639065725,,,,,['search']
-WeLiveSecurity,1639065725.0,402.0,50.0,,,
 Webfail,1639065725,10,1,broken,Bridge returned error 0! (18970),
 WikiLeaks,1639065725,99,1,broken,Bridge returned error 404! (18970),
 Wikipedia,1639065725,26,1,working,,
-Wired,1639065725.0,1961.0,50.0,,,
 WordPress,1639065725,,,,,['url']
 WordPressPluginUpdate,1639065725,,,,,['pluginUrl']
 WorldCosplay,1639065725,74,5,working,,
