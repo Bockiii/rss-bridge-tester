@@ -21,8 +21,6 @@ jobs:
       - name: Sleep for 5 seconds
         run: sleep 5s
         shell: bash
-      - name: Test container
-        run: curl localhost:3000
       - name: Setup python
         uses: actions/setup-python@v2
         with:
