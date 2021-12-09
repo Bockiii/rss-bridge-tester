@@ -1,0 +1,308 @@
+,timestamp,runtime,items,status,code,missing
+ABCTabs,1639065725,98,0,broken,,
+AO3,1639065725,1,1,broken,Bridge returned error 400! (18970),
+ARDMediathek,1639065725,91,0,broken,,
+ASRockNews,1639065725,218,10,working,,
+Acrimed,1639065725,740,10,working,,
+AirBreizh,1639065725,141,10,working,,
+AlbionOnline,1639065725,50,5,working,,
+AllocineFR,1639065725,350,33,working,,
+Amazon,1639065725,,,,,['q']
+AmazonPriceTracker,1639065725,133,1,working,,
+Anidex,1639065725,11,1,broken,Bridge returned error 0! (18970),
+AnimeUltime,1639065725.0,450.0,,,,
+AppleAppStore,1639065725,113,25,working,,
+AppleMusic,1639065725,80,10,working,,
+ArtStation,1639065725,,,,,['q']
+Arte7,1639065725,,,,,"['colfr', 'colde']"
+AsahiShimbunAJW,1639065725,91,1,broken,Bridge returned error 404! (18970),
+Askfm,1639065725,,,,,['u']
+AtmoNouvelleAquitaine,1639065725,126,1,working,,
+AtmoOccitanie,1639065725,,,,,['city']
+AutoJM,1639065725,257,0,broken,,
+Awwwards,1639065725,110,10,working,,
+BAE,1639065725,170,7,working,,
+BadDragon,1639065725,21,2,working,,
+BakaUpdatesMangaReleases,1639065725,1,1,broken,Bridge returned error 400! (18970),
+Bandcamp,1639065725,,,,,"['tag', 'band', 'label', 'band', 'album']"
+Basta,1639065725,1087,10,working,,
+Binance,1639065725,24,10,working,,
+BlaguesDeMerde,1639065725,64,10,working,,
+BleepingComputer,1639065725,823,14,working,,
+BlizzardNews,1639065725,97,26,working,,
+Booruproject,1639065725,,,,,['i']
+Brut,1639065725,380,5,working,,
+Bukowskis,1639065725,256,100,sizewarning,,
+Bundesbank,1639065725,88,10,working,,
+CNET,1639065725,79,4,working,,
+CNETFrance,1639065725,67,23,working,,
+Cachet,1639065725,59,6,working,,
+Castorus,1639065725,88,0,broken,,
+CeskaTelevize,1639065725,148,0,broken,,
+Codeberg,1639065725,,,,,['issueId']
+CollegeDeFrance,1639065725,77,30,working,,
+ComboiosDePortugal,1639065725,62,1,broken,Bridge returned error 0! (18970),
+ComicsKingdom,1639065725,,,,,['comicname']
+CommonDreams,1639065725,162,10,working,,
+ContainerLinuxReleases,1639065725,30,1,broken,Bridge returned error 404! (18970),
+CopieDouble,1639065725,86,5,working,,
+CourrierInternational,1639065725,484,20,working,,
+Crewbay,1639065725,1567,10,working,,
+Cryptome,1639065725,169,20,working,,
+CuriousCat,1639065725,62,30,working,,
+Dailymotion,1639065725,,,,,"['u', 'p', 's']"
+Danbooru,1639065725,69,20,working,,
+DansTonChat,1639065725,120,25,working,,
+DarkReading,1639065725,1148,20,working,,
+DauphineLibere,1639065725,1191,10,working,,
+DaveRamseyBlog,1639065725,71,0,broken,,
+DavesTrailerPage,1639065725,72,70,sizewarning,,
+Dealabs,1639065725,,,,,['q']
+Derpibooru,1639065725,,,,,['q']
+Desoutter,1639065725,4,1,broken,Bridge returned error 0! (18970),
+DevTo,1639065725,20,60,sizewarning,,
+DeveloppezDotCom,1639065725,2078,15,working,,
+DiarioDeNoticias,1639065725,193,1,broken,Bridge returned error 404! (18970),
+DiarioDoAlentejo,1639065725,400,16,working,,
+Dice,1639065725,101,100,sizewarning,,
+Dilbert,1639065725,56,3,working,,
+Discogs,1639065725,1,0,broken,,
+DockerHub,1639065725,34,25,working,,
+Donnons,1639065725,365,80,sizewarning,,
+DownDetector,1639065725,90,0,broken,,
+Dribbble,1639065725,32,24,working,,
+Drive2ru,1639065725,154,20,working,,
+DuckDuckGo,1639065725,,,,,['u']
+ETTV,1639065725,,,,,['query']
+EZTV,1639065725,46,1,broken,Bridge returned error 404! (18970),
+Economist,1639065725,180,1,working,,
+EliteDangerousGalnet,1639065725,76,15,working,,
+Ello,1639065725,,,,,"['u', 's']"
+Elsevier,1639065725,212,1,broken,Bridge returned error 404! (18970),
+Engadget,1639065725,528,15,working,,
+Epicgames,1639065725,112,10,working,,
+EsquerdaNet,1639065725,2876,20,working,,
+EstCeQuonMetEnProd,1639065725,94,1,working,,
+Etsy,1639065725,62,0,broken,,
+Explosm,1639065725,129,5,working,,
+ExtremeDownload,1639065725,210,19,working,,
+FB2,1639065725,,,,,['u']
+FDroid,1639065725,95,3,working,,
+FM4,1639065725,127,6,working,,
+FSecureBlog,1639065725,1214,20,working,,
+FabriceBellard,1639065725,75,23,working,,
+FeedExpanderExample,1639065725,1,1,broken,Bridge returned error 400! (18970),
+Ficbook,1639065725,1,1,broken,Bridge returned error 400! (18970),
+FindACrew,1639065725,161,1,working,,
+FirefoxAddons,1639065725,23,25,working,,
+FirstLookMediaTech,1639065725,52,5,working,,
+Flashback,1639065725,554,52,sizewarning,,
+FolhaDeSaoPaulo,1639065725,223,1,broken,Bridge returned error 500! (18970),
+Footito,1639065725,271,1,broken,Bridge returned error 502! (18970),
+ForGifs,1639065725,32,2,working,,
+Formula1,1639065725,163,10,working,,
+Fourchan,1639065725,,,,,"['c', 't']"
+FreeCodeCamp,1639065725,432,10,working,,
+FurAffinity,1639065725,,,,,"['q', 'username-journals', 'journal-id', 'username-gallery', 'username-scraps', 'username-favorites', 'username-folder', 'folder-id']"
+FurAffinityUser,1639065725,,,,,"['searchUsername', 'loginUsername', 'loginPassword']"
+FuturaSciences,1639065725,762,10,working,,
+GBAtemp,1639065725,15,1,broken,Bridge returned error 403! (18970),
+GOG,1639065725,444,10,working,,
+GQMagazine,1639065725,2653,21,working,,
+Gelbooru,1639065725,77,0,broken,,
+GenshinImpact,1639065725,127,3,working,,
+Giphy,1639065725,,,,,['s']
+GitHubGist,1639065725,216,1,broken,Bridge returned error 500! (18970),
+Gitea,1639065725,26,1,broken,Bridge returned error 404! (18970),
+GithubIssue,1639065725,,,,,"['u', 'p', 'i', 'u', 'p']"
+GithubPullRequest,1639065725,,,,,"['u', 'p', 'i', 'u', 'p']"
+GithubSearch,1639065725,36,0,broken,,
+GithubTrending,1639065725,22,1,broken,Bridge returned error 400! (18970),
+Gizmodo,1639065725,260,20,working,,
+Glassdoor,1639065725,254,10,working,,
+Glowfic,1639065725,42,0,broken,,
+GoComics,1639065725,,,,,['comicname']
+Gogs,1639065725,8,1,broken,Bridge returned error 404! (18970),
+GoogleSearch,1639065725,,,,,['q']
+GrandComicsDatabase,1639065725,104,66,sizewarning,,
+HDWallpapers,1639065725,108,14,working,,
+HackerNewsUserThreads,1639065725,,,,,['user']
+HardwareInfo,1639065725,1884,20,working,,
+HaveIBeenPwned,1639065725,55,20,working,,
+Heise,1639065725,601,5,working,,
+HentaiHaven,1639065725,3104,1,broken,Bridge returned error 522! (18970),
+HotUKDeals,1639065725,,,,,['q']
+IGN,1639065725,319,15,working,,
+IKWYD,1639065725,,,,,['ip']
+IPB,1639065725,164,1,broken,Bridge returned error 500! (18970),
+Identica,1639065725,,,,,['u']
+Indeed,1639065725,41,0,broken,,
+Indiegogo,1639065725,32,12,working,,
+Instagram,1639065725,,,,,"['u', 'h', 'l']"
+Instructables,1639065725,5,1,broken,Bridge returned error 0! (18970),
+InternetArchive,1639065725,704,100,sizewarning,,
+Itchio,1639065725,29,1,working,,
+Ivoox,1639065725,1,1,broken,Bridge returned error 400! (18970),
+JapanExpo,1639065725,182,12,working,,
+JornalDeNoticias,1639065725,180,103,sizewarning,,
+JustETF,1639065725,,,,,['isin']
+KernelBugTracker,1639065725,171,32,working,,
+Konachan,1639065725,59,21,working,,
+Koreus,1639065725,680,10,working,,
+Kununu,1639065725,90,1,broken,Bridge returned error 500! (18970),
+LWNprev,1639065725,58,0,broken,,
+LaCentrale,1639065725,162,0,broken,,
+LeBonCoin,1639065725,28,1,broken,Bridge returned error 403! (18970),
+LeMondeInformatique,1639065725,917,10,working,,
+LegifranceJO,1639065725,87,1,working,,
+LegoIdeas,1639065725,84,21,working,,
+LesJoiesDuCode,1639065725,148,4,working,,
+Lichess,1639065725,201,1,working,,
+Listverse,1639065725,123,10,working,,
+Lolibooru,1639065725,99,40,working,,
+MallTv,1639065725,952,10,working,,
+Mangareader,1639065725,3143,1,broken,Bridge returned error 522! (18970),
+Marktplaats,1639065725,,,,,['q']
+Mastodon,1639065725,,,,,['canusername']
+MediapartBlogs,1639065725,90,1,broken,Bridge returned error 404! (18970),
+Mediapart,1639065725,59,10,working,,
+Milbooru,1639065725,32,24,working,,
+MixCloud,1639065725,,,,,['u']
+ModelKartei,1639065725,2,1,broken,Bridge returned error 500! (18970),
+Moebooru,1639065725,54,1,broken,Bridge returned error 0! (18970),
+MoinMoin,1639065725,79,1,working,,
+MondeDiplo,1639065725,105,20,working,,
+MozillaBugTracker,1639065725,95,29,working,,
+MozillaSecurity,1639065725,69,20,working,,
+MsnMonde,1639065725,6,0,broken,,
+Mspabooru,1639065725,116,25,working,,
+Mydeals,1639065725,,,,,['q']
+N26,1639065725,57,0,broken,,
+NFLRUS,1639065725,203,0,broken,,
+NYT,1639065725,23,1,broken,Bridge returned error 403! (18970),
+NasaApod,1639065725,257,3,working,,
+NationalGeographic,1639065725,2,1,broken,Bridge returned error 500! (18970),
+NeuviemeArt,1639065725,1063,10,working,,
+NewOnNetflix,1639065725,127,197,sizewarning,,
+NextInpact,1639065725,7632,101,sizewarning,,
+Nextgov,1639065725,161,10,working,,
+NiceMatin,1639065725,917,10,working,,
+NikonDownloadCenter,1639065725,24,40,working,,
+NineGag,1639065725,219,30,working,,
+Nordbayern,1639065725,1363,28,working,,
+NotAlways,1639065725,33,5,working,,
+NovelUpdates,1639065725,12,1,broken,Bridge returned error 403! (18970),
+NyaaTorrents,1639065725,1055,20,working,,
+OnVaSortir,1639065725,503,5,working,,
+OneFortuneADay,1639065725,2,7,working,,
+OpenClassrooms,1639065725,121,0,broken,,
+Openly,1639065725,794,10,working,,
+Openwhyd,1639065725,,,,,['u']
+OpenwrtSecurity,1639065725,106,18,working,,
+OsmAndBlog,1639065725,55,1,working,,
+OtrkeyFinder,1639065725,583,100,sizewarning,,
+PanacheDigitalGames,1639065725,55,33,working,,
+ParuVenduImmo,1639065725,185,0,broken,,
+Patreon,1639065725,,,,,['creator']
+PcGamer,1639065725,730,71,sizewarning,,
+Phoronix,1639065725,303,15,working,,
+PickyWallpapers,1639065725,,,,,['c']
+Picuki,1639065725,,,,,"['u', 'h']"
+Pikabu,1639065725,244,10,working,,
+Pillowfort,1639065725,,,,,['username']
+Pinterest,1639065725,,,,,"['u', 'b']"
+PirateCommunity,1639065725,,,,,['t']
+Pixiv,1639065725,639,10,working,,
+PlantUMLReleases,1639065725,65,137,sizewarning,,
+PokemonTV,1639065725,118,1,broken,Bridge returned error 404! (18970),
+Pornhub,1639065725,,,,,['q']
+PresidenciaPT,1639065725.0,826.0,,,,
+QPlay,1639065725,,,,,['program']
+RTBF,1639065725,188,1,broken,Bridge returned error 404! (18970),
+RaceDepartment,1639065725,998,10,working,,
+RadioMelodie,1639065725,98,1,working,,
+RainbowSixSiege,1639065725,138,0,broken,,
+Reddit,1639065725,,,,,['u']
+Releases3DS,1639065725,107,5,working,,
+ReleasesSwitch,1639065725,110,5,working,,
+Reporterre,1639065725,632,5,working,,
+Reuters,1639065725,1231,30,working,,
+RoadAndTrack,1639065725,35,1,working,,
+RobinhoodSnacks,1639065725,40,0,broken,,
+RoosterTeeth,1639065725,49,10,working,,
+Rue89,1639065725,87,2,working,,
+Rule34,1639065725,30,42,working,,
+Rule34paheal,1639065725,34,70,sizewarning,,
+SIMAR,1639065725,2737,35,working,,
+Safebooru,1639065725,108,40,working,,
+Scmb,1639065725,92,20,working,,
+ScoopIt,1639065725,,,,,['u']
+Scribd,1639065725,2,1,broken,Bridge returned error 500! (18970),
+SensCritique,1639065725,2,0,broken,,
+SeznamZpravy,1639065725,151,1,broken,Bridge returned error 500! (18970),
+Shanaproject,1639065725.0,73.0,50.0,,,
+Shimmie2,1639065725,74,1,broken,Bridge returned error 404! (18970),
+Skimfeed,1639065725,89,216,sizewarning,,
+Soundcloud,1639065725,,,,,['u']
+SplCenter,1639065725,665,20,working,,
+Spottschau,1639065725,46,1,working,,
+Steam,1639065725,30,7,working,,
+SteamCommunity,1639065725,,,,,['i']
+StockFilings,1639065725,27,1,broken,Bridge returned error 403! (18970),
+StripeAPIChangeLog,1639065725,118,96,sizewarning,,
+SupInfo,1639065725,259,1,working,,
+SuperSmashBlog,1639065725,94,198,sizewarning,,
+SymfonyCasts,1639065725,41,21,working,,
+TagBoard,1639065725,,,,,['u']
+Tbib,1639065725,49,42,working,,
+Tebeo,1639065725,149,60,sizewarning,,
+Telegram,1639065725,122,20,working,,
+TheFarSide,1639065725,132,1,working,,
+TheGuardian,1639065725,332,10,working,,
+TheHackerNews,1639065725,81,5,working,,
+ThePirateBay,1639065725,93,1,broken,Bridge returned error 500! (18970),
+TheTVDB,1639065725,,,,,['serie_id']
+TheWhiteboard,1639065725,41,1,working,,
+TheYetee,1639065725,247,2,working,,
+Thingiverse,1639065725,65,0,broken,,
+TinyLetter,1639065725,49,1,broken,Bridge returned error 404! (18970),
+TorrentGalaxy,1639065725,,,,,['search']
+Trello,1639065725,40,37,working,,
+TwitScoop,1639065725,87,20,working,,
+Twitch,1639065725,,,,,['channel']
+Twitter,1639065725,,,,,['list']
+Unogs,1639065725,1139,30,working,,
+UnraidCommunityApplications,1639065725,27,15,working,,
+Unsplash,1639065725,39,20,working,,
+Urlebird,1639065725,,,,,['query']
+UsbekEtRica,1639065725,440,0,broken,,
+Variety,1639065725,214,10,working,,
+ViadeoCompany,1639065725,,,,,['c']
+Vice,1639065725,207,10,working,,
+VieDeMerde,1639065725,129,0,broken,,
+Vimeo,1639065725,,,,,['q']
+Vk,1639065725,,,,,['u']
+WallmineNews,1639065725,958,10,working,,
+WallpaperStop,1639065725,56,0,broken,,
+Wallpaperflare,1639065725,,,,,['search']
+WeLiveSecurity,1639065725.0,402.0,50.0,,,
+Webfail,1639065725,10,1,broken,Bridge returned error 0! (18970),
+WikiLeaks,1639065725,99,1,broken,Bridge returned error 404! (18970),
+Wikipedia,1639065725,26,1,working,,
+Wired,1639065725.0,1961.0,50.0,,,
+WordPress,1639065725,,,,,['url']
+WordPressPluginUpdate,1639065725,,,,,['pluginUrl']
+WorldCosplay,1639065725,74,5,working,,
+WorldOfTanks,1639065725,1850,20,working,,
+Woscker,1639065725,69,1,working,,
+XPath,1639065725,59,26,working,,
+Xbooru,1639065725,89,42,working,,
+XenForo,1639065725,57,5,working,,
+YGGTorrent,1639065725,25,1,broken,Bridge returned error 503! (18970),
+YahtzeeDevDiary,1639065725,55,0,broken,,
+Yandere,1639065725,53,40,working,,
+Yeggi,1639065725,127,32,working,,
+Youtube,1639065725,39,1,broken,Bridge returned error 404! (18970),
+ZDNet,1639065725,401,20,working,,
+Zenodo,1639065725,109,1,working,,
+ZoneTelechargement,1639065725,15,1,broken,Bridge returned error 403! (18970),
