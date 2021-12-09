@@ -22,7 +22,7 @@ jobs:
         run: sleep 5s
         shell: bash
       - name: Test container
-        run: curl localhost:3000
+        run: curl localhost
       - name: Setup python
         uses: actions/setup-python@v2
         with:
