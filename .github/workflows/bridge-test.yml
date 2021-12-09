@@ -26,6 +26,7 @@ jobs:
         with:
           python-version: '3.7'
           cache: 'pip'
+      - name: Install requirements
         run: pip install -r requirements.txt
       - name: Run bridge tests
         run: python bridgetester.py
