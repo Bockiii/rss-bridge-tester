@@ -69,7 +69,7 @@ def getBridge(bridgestring,bridgeref):
     #    ERRORMESSAGES.append(bridgestring + ' returns no page')
 
 
-URL = "http://localhost"
+URL = "http://localhost:3000"
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, "html.parser")
 
