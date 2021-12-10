@@ -30,7 +30,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run bridge tests
         run: python bridgetester.py
-      - name: Update deployment files
+      - name: Update stats
         uses: test-room-7/action-update-file@v1
         with:
           file-path: stats.csv
