@@ -83,17 +83,26 @@ plt.savefig(f"{n}_slowest_bridges.png", bbox_inches="tight", dpi=200)
 
 labels = ["working", "broken", "sizewarning", "nan"]
 
-latest_timestamps = np.sort(bridges["timestamp"].unique())#[-30:] # Uncomment this to restrict the number of bridges
+latest_timestamps = np.sort(bridges["timestamp"].unique())[-30:]
 
 datamap = (bridges[bridges["timestamp"].isin(latest_timestamps)]
            .assign(date=lambda x: pd.to_datetime(x["timestamp"], unit="s"))
            .set_index(["Bridgename", "date"])["status"].unstack()
            .fillna("nan").replace({l:i for i, l in enumerate(labels)}))
 
-
 fig, ax = plt.subplots(figsize=(10,80), facecolor="white")
 sb.heatmap(datamap, cmap=list(np.array(sb.color_palette("pastel"))[[2, 3, 8, 7]]),
            linewidth=0.5, square=True, cbar=False)
 
-plt.savefig("bridge_status_heatmap.png", bbox_inches="tight", dpi=200)
+# plt.rc('ytick', labelsize=1, =0)    # fontsize of the tick labels
+ax.set_xlabel("")
+ax.set_ylabel("")
+
+ax.set_xticklabels([time.get_text().split("T")[0] for time in ax.get_xticklabels()])
+
+ax.tick_params(axis='y', which='major', pad=0.5, labelsize=15, labelrotation=0)
+ax.tick_params(axis='x', which='major', labelsize=15)
+
+
+plt.savefig("bridge_status_heatmap.png", bbox_inches="tight", dpi=500)
 
