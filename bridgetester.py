@@ -10,17 +10,21 @@ import os.path
 def getParameters(bridges):
     for bridge in bridges:
         if bridge.get('data-ref'):
-            if bridge.get('data-ref') in IGNORED:
+            bridgeid = bridge.get('id')
+            bridgeid = bridgeid.split('-')[1] # this extracts a readable bridge name from the bridge metadata
+            if bridgeid in IGNORED:
                 continue
-            RESULTS[bridge.get('data-ref')] = {}
-            RESULTS[bridge.get('data-ref')]['timestamp'] = TIMEOFRUN
+            formid = 1
+            formidstring = 'form' + formid
+            RESULTS[bridgeid] = {}
+            RESULTS[bridgeid][formidstring]['timestamp'] = TIMEOFRUN
             errormessages = []
-            bridgestring = '/?action=display&bridge=' + bridge.get('data-ref') + '&format=Json'
+            bridgestring = '/?action=display&bridge=' + bridgeid + '&format=Json'
             forms = bridge.find_all("form")
-            formstrings = []
             for form in forms:
                 formstring = ''
                 parameters = form.find_all("input")
+                lists = form.find_all("select")
                 for parameter in parameters:
                     if parameter.get('type') == 'number' or parameter.get('type') == 'text':
                         if parameter.has_attr('required'):
@@ -34,37 +38,46 @@ def getParameters(bridges):
                     if parameter.get('type') == 'checkbox':
                         if parameter.has_attr('checked'):
                             formstring = formstring + '&' + parameter.get('name') + '=on'
-                formstrings.append(formstring)
-            if not errormessages:
-                getBridge(URL + bridgestring + random.choice(formstrings),bridge.get('data-ref'))
-            else:
-                RESULTS[bridge.get('data-ref')]['missing'] = errormessages
+                for list in lists:
+                    selectionvalue = ''
+                    for selectionentry in list.contents:
+                        if 'selected' in selectionentry.attrs:
+                            selectionvalue = selectionentry.get('value')
+                            break
+                    if selectionvalue == '':
+                        selectionvalue = list.contents[0].get('value')
+                    formstring = formstring + '&' + list.get('name') + '=' + selectionvalue
+                if not errormessages:
+                    getBridge(URL + bridgestring + formstring,bridgeid,formidstring)
+                else:
+                    RESULTS[bridgeid][formidstring]['missing'] = errormessages
+                formid += 1
 
-def getBridge(bridgestring,bridgeref):
+def getBridge(bridgestring,bridgeid,formidstring):
     start = time.perf_counter()
     page = requests.get(bridgestring)
     page.encoding='utf-8-sig'
     runtime = time.perf_counter() - start
     # some time calculations needed to get the seconds correctly into powerbi
-    RESULTS[bridgeref]['runtime'] = int(runtime * 1000)
+    RESULTS[bridgeid][formidstring]['runtime'] = int(runtime * 1000)
     if page.text != '':
         jsoncontent = page.json()
-        RESULTS[bridgeref]['items'] = len(jsoncontent['items'])
+        RESULTS[bridgeid][formidstring]['items'] = len(jsoncontent['items'])
         if len(jsoncontent['items']) == 0:
-            RESULTS[bridgeref]['status'] = 'broken'
+            RESULTS[bridgeid][formidstring]['status'] = 'broken'
         elif len(jsoncontent['items']) == 1:
             if jsoncontent['items'][0].get('title'):
                 if 'Bridge returned error' in jsoncontent['items'][0]['title']:
-                    RESULTS[bridgeref]['status'] = 'broken'
-                    RESULTS[bridgeref]['code'] = jsoncontent['items'][0]['title']
+                    RESULTS[bridgeid][formidstring]['status'] = 'broken'
+                    RESULTS[bridgeid][formidstring]['code'] = jsoncontent['items'][0]['title']
                 else:
-                    RESULTS[bridgeref]['status'] = 'working'
+                    RESULTS[bridgeid][formidstring]['status'] = 'working'
             else:
-                RESULTS[bridgeref]['status'] = 'working'
+                RESULTS[bridgeid][formidstring]['status'] = 'working'
         elif len(jsoncontent['items']) > 1 and len(jsoncontent['items']) < 50:
-            RESULTS[bridgeref]['status'] = 'working'
+            RESULTS[bridgeid][formidstring]['status'] = 'working'
         elif len(jsoncontent['items']) > 50:
-            RESULTS[bridgeref]['status'] = 'sizewarning'
+            RESULTS[bridgeid][formidstring]['status'] = 'sizewarning'
     #else:
     #    ERRORMESSAGES.append(bridgestring + ' returns no page')
 
