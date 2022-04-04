@@ -15,7 +15,7 @@ def getParameters(bridges):
             if bridgeid in IGNORED:
                 continue
             formid = 1
-            formidstring = 'form' + formid
+            formidstring = 'form' + str(formid)
             RESULTS[bridgeid] = {}
             RESULTS[bridgeid][formidstring]['timestamp'] = TIMEOFRUN
             errormessages = []
