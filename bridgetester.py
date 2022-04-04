@@ -17,6 +17,7 @@ def getParameters(bridges):
             formid = 1
             formidstring = 'form' + str(formid)
             RESULTS[bridgeid] = {}
+            RESULTS[bridgeid]['formid'] = formidstring
             RESULTS[bridgeid][formidstring]['timestamp'] = TIMEOFRUN
             errormessages = []
             bridgestring = '/?action=display&bridge=' + bridgeid + '&format=Json'
