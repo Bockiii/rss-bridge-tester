@@ -33,6 +33,6 @@ jobs:
       - name: Update stats
         uses: test-room-7/action-update-file@v1
         with:
-          file-path: stats.csv
+          file-path: run.log
           commit-msg: New run
           github-token: ${{ secrets.GITHUB_TOKEN }}
